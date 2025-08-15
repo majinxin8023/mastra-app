@@ -28,7 +28,7 @@ export const mastra = new Mastra({
     name: "mastra-app",
     compatibility_date: "2025-08-15",
     assets: {
-      directory: "./dist",
+      directory: "./.mastra/output",
     },
   }),
 });
