@@ -1,5 +1,6 @@
 // 引入 Mastra 核心框架
 import { Mastra } from "@mastra/core/mastra";
+import { CloudflareDeployer } from "@mastra/deployer-cloudflare";
 // 引入日志记录器
 import { PinoLogger } from "@mastra/loggers";
 // 引入 LibSQL 存储实现
@@ -22,5 +23,8 @@ export const mastra = new Mastra({
   logger: new PinoLogger({
     name: "Mastra",
     level: "info",
+  }),
+  deployer: new CloudflareDeployer({
+    projectName: "hello-mastra",
   }),
 });
