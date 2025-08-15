@@ -25,6 +25,10 @@ export const mastra = new Mastra({
     level: "info",
   }),
   deployer: new CloudflareDeployer({
-    projectName: "hello-mastra",
+    name: "mastra-app",
+    compatibility_date: "2025-08-15",
+    assets: {
+      directory: "./dist",
+    },
   }),
 });
