@@ -15,7 +15,7 @@ import { ragAgent } from "./agents/rag-agent";
 // 创建并导出 Mastra 实例，注册所有工作流和智能体
 export const mastra = new Mastra({
   workflows: { weatherWorkflow }, // 注册天气工作流
-  agents: { weatherAgent, crAgent, ragAgent }, // 注册天气、Code Review和RAG智能体
+  agents: { weatherAgent, crAgent, ragAgent }, // 注册天气、Code Review和RAG智能体111
   storage: new LibSQLStore({
     // 存储 Mastra 的遥测、评测等数据。当前为内存存储，如需持久化可改为 file:../mastra.db
     url: ":memory:",
@@ -26,9 +26,5 @@ export const mastra = new Mastra({
   }),
   deployer: new CloudflareDeployer({
     name: "mastra-app",
-    compatibility_date: "2025-08-15",
-    assets: {
-      directory: "./.mastra/output",
-    },
   }),
 });
