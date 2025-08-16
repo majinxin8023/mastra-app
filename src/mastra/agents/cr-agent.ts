@@ -1,4 +1,4 @@
-import { deepseek } from "@ai-sdk/deepseek";
+import { openai } from "@ai-sdk/openai";
 import { Agent } from "@mastra/core/agent";
 
 // 创建 Code Review 智能体
@@ -17,5 +17,5 @@ export const crAgent = new Agent({
     If the code is incomplete or unclear, ask for clarification.
     Reply in the same language as the code comments or user question.
   `,
-  model: deepseek("deepseek-chat"),
+  model: openai("gpt-3.5-turbo"),
 });

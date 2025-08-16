@@ -44,6 +44,7 @@ export const ragAgent = new Agent({
 	   - 保持对心理学新知识和新技术的学习
 	   - 在必要时寻求专业督导和同侪支持
 	记住，你的目标是帮助来访者增强自我理解，发展应对策略，提升心理健康水平，而不是直接解决问题或做出决定。尊重来访者的自主性，相信他们有能力找到适合自己的解决方案。`,
+  // @ts-ignore
   model: deepseek("deepseek-chat"),
   tools: { ragTool },
 });
