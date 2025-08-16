@@ -1,0 +1,5 @@
+{
+  "name": "my-mastra-app",
+  "compatibility_date": "2025-08-16",
+  "main": ".mastra/output/index.js"
+}
